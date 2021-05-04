@@ -1,129 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Animación Imagenes</title>
-
-  <style>
-    body {
-      margin: 0;
-    }
-
-    .imagenes-container {
-      position: relative;
-    }
-
-    .imagen-2,
-    .imagen-3 {
-      position: absolute;
-      top: 0;
-      left: 0;
-      visibility: hidden;
-    }
-
-    .imagen {
-      animation-delay: 1s;
-      animation-duration: 5s;
-      animation-iteration-count: infinite;
-      animation-direction: normal;
-      transform-origin: bottom center;
-      animation-timing-function: linear;
-    }
-
-    .imagen-1 {
-      animation-name: imagen1;
-    }
-
-    .imagen-2 {
-      animation-name: imagen2;
-    }
-
-    .imagen-3 {
-      animation-name: imagen3;
-    }
-
-    @keyframes imagen1 {
-      0% {
-        visibility: visible;
-      }
-
-      25% {
-        visibility: hidden;
-      }
-
-      50% {
-        visibility: hidden;
-      }
-
-      75% {
-        visibility: visible;
-      }
-
-      100% {
-        visibility: visible;
-      }
-    }
-
-    @keyframes imagen2 {
-      0% {
-        visibility: hidden;
-      }
-
-      25% {
-        visibility: visible;
-      }
-
-      50% {
-        visibility: hidden;
-      }
-
-      75% {
-        visibility: hidden;
-      }
-
-      100% {
-        visibility: hidden;
-      }
-    }
-
-    @keyframes imagen3 {
-      0% {
-        visibility: hidden;
-      }
-
-      25% {
-        visibility: hidden;
-      }
-
-      50% {
-        visibility: visible;
-      }
-
-      75% {
-        visibility: hidden;
-      }
-
-      100% {
-        visibility: hidden;
-      }
-    }
-  </style>
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <div class="imagenes-container">
-    <img class="imagen imagen-1" src="1Banner-Opal-Bo_300x600px.jpg" alt="">
-    <img class="imagen imagen-2" src="2Banner-Opal-Bo_300x600px.jpg" alt="">
-    <img class="imagen imagen-3" src="3Banner-Opal-Bo_300x600px.jpg" alt="">
+  <div class="imagenes-container relative">
+    <div class="imagenes-item imagen imagen-1 relative">
+      <img src="Banner1/1Banner-Opal-Bo_300x600px.jpg" alt="">
+      <img class="imagen absolute textoImagen-1" style="top: 100px; left: 0;" src="Banner1/1BotonBanner-Opal-Bo_300x600px.png" alt="">
+    </div>
+    <div class="imagenes-item imagen imagen-2 relative">
+      <img src="Banner2/2Banner-Opal-Bo_300x600px.jpg" alt="">
+      <img class="imagen absolute textoImagen-2" style="bottom: 40px; left: 0;" src="Banner2/2TextoBanner-Opal-Bo_300x600px.png" alt="">
+    </div>
+    <div class="imagenes-item imagen imagen-3 relative">
+      <img src="Banner3/3Banner-Opal-Bo_300x600px.jpg" alt="">
+      <img class="imagen absolute textoImagen-3" style="bottom: 150px; left: 0;" src="Banner3/3TextoBanner-Opal-Bo_300x600px.png" alt="">
+      <img class="imagen absolute botonImagen-3" style="bottom: 100px; left: 0;" src="Banner3/3BotonBanner-Opal-Bo_300x600px.png" alt="">
+    </div>
   </div>
-  <div class="imagenes-container">
+  <!-- <div class="imagenes-container">
     <img class="imagen imagen-1" src="1BannerOpal_Bo_728x90px.jpg" alt="">
     <img class="imagen imagen-2" src="2BannerOpal_Bo_728x90px.jpg" alt="">
     <img class="imagen imagen-3" src="3BannerOpal_Bo_728x90px.jpg" alt="">
-  </div>
-</body>
+  </div> -->
 
+</body>
 </html>
