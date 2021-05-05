@@ -9,6 +9,10 @@ body{
   position: absolute;
 }
 
+.imagenes-item,.imagenes-container{
+  display: inline-block;
+}
+
 .imagen-2,.imagen-3{
   position: absolute;
   top: 0;
