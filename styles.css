@@ -32,6 +32,7 @@ body{
 .bolsaImagen-1{
   animation-name: bolsaimagen1;
   overflow: hidden;
+  transform-origin: center bottom;
 }
 
 .textoImagen-2{
@@ -218,4 +219,13 @@ body{
     transform: scale(1);
     opacity: 1;
   }
+}
+
+.l-heigh-0{
+  line-height: 0;
+}
+
+
+*{
+  outline: 1px solid red;
 }
